@@ -1,0 +1,15 @@
+<form ng-submit="addEntry.$valid && MainCtrl.addEntry(entry)" name="addEntry" novalidate>
+    <div class="row form-fields">
+        <div class="form-group col s12">
+            <label for="date" class="">Date</label>
+            <input class="form-control datepicker" id="date" placeholder="dd/mm/yyyy" name="date"  ng-model="entry.date" type="text" required>
+        </div>
+        <div class="form-group col s12 input-field">
+            <label for="duration">Duration</label>
+            <input type="number" class="form-control " id="duration" placeholder="Duration in Minutes" name="duration" ng-model="entry.duration" required>
+        </div>
+        <div class="submit-btn-container center-align col s12">
+            <button type="submit" class="btn btn-primary save-btn col s12">SAVE</button>
+        </div>
+    </div>
+</form>

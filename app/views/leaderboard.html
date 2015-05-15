@@ -1,0 +1,38 @@
+<div class="top-bar row">
+    <div class="top-bar-container">
+        <span class="logo col s2">
+            <img src="images/logo.png" />
+        </span>
+        <span class="date-and-total col s10">
+            <div class="date">
+                {{ leaderboard.month }}
+            </div>
+            <div class="total-amount">
+                <span>&#8377</span>
+                <span class="value">
+                    {{ leaderboard.contributed_amount }}
+                </span>
+                <span class="goal-section">
+                    /
+                    <span>&#8377</span>
+                    <span class ="goal">
+                        {{ leaderboard.goal }}
+                    </span>
+                </span>
+            </div>
+        </span>
+    </div>
+</div>
+<div class="container leaderboard">
+    <div class="row">
+        <ul class="collection">
+            <user-list>
+            </user-list>
+        </ul>
+    </div>
+</div>
+<div class="bottom-spacing">
+</div>
+<div class="fixed-action-btn">
+    <a class="btn-floating btn-large waves-effect waves-light add-entry-btn"><i class="mdi-content-add"></i></a>
+</div>
